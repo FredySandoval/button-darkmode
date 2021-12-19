@@ -27,3 +27,10 @@
 </script>
 
 <div class="darkmode-icon"></div>
+<style>
+  .darkmode-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

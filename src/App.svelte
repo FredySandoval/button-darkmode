@@ -1,8 +1,8 @@
 <script>
 	import ButtonDarkmode from "./ButtonDarkmode.svelte";
 </script>
-<h1>Material design Darkmode Icon</h1>
+<h1>Material design Darkmode Icon in SVELTE</h1>
 <ButtonDarkmode />
 <p>
-	darkmode saved in localStorage
+	Darkmode state is saved in localStorage
 </p>
