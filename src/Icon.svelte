@@ -22,10 +22,4 @@
   });
 </script>
 
-<svg
-  class={$$props.class}
-  {focusable}
-  {width}
-  {height}
-  viewBox="0 0 {displayIcon.box} {displayIcon.box}">{@html displayIcon.svg}</svg
->
+<div>displayIcon</div>
