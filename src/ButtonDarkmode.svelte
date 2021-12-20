@@ -2,18 +2,17 @@
   import Icon from "./Icon.svelte";
   import { RippleEffect } from "./utils";
 
-  $: bool = localStorage.getItem("theme");
-
+  let bool = localStorage.getItem("theme");
   if (!bool && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    bool = "dark";
+  bool = "dark";
   if (!bool) bool = "light";
-
+  
   function setTheme(newTheme) {
     document.body.classList.add("bg-transition"); // adds a smooth transition, if we add it to body element it creates a flash
     document.documentElement.setAttribute("theme", newTheme);
     localStorage.setItem("theme", newTheme);
   }
-
+  
   function handleClick() {
     bool = bool == "light" ? "dark" : "light";
     let theme = document.documentElement.getAttribute("theme") || "light";
